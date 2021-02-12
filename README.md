@@ -1,21 +1,30 @@
 # Prime
-//using for loop
-public class fibonacciExample
+public class primeExample
 {
-public static void main(string[] args)
+public static void main(string args[])
 {
-//set  it to the number of elements you want in the fibonacci series
-int MaxNumber=10;
-int PreviousNumber=0;
-int NextNumber=1;
-system.out.print("fibonacci series of"+MaxNumber+"numbers:");
-for(int i=1;i<=MaxNumber;i++)
+int i,m=0,flag=0;
+int n=3;//it is the number to be checked
+m=n/2;
+if(n==0||n==1)
 {
-system.out.print(PreviousNumber+" ");
-/*on each iteration,we are assigning second number to the first number and assigning the sum of last two number to the second number.
-int sum=PreviousNumber+NextNumber;
-PreviousNumber=NextNumber;
-NextNumber=sum;
+system.out.println(n+"is not prime number:");
 }
+else
+{
+for(i=2;i<=m;i++)
+{
+if(n%==0)
+{
+system.out.println(n+"is not prime number:");
+flag=1;
+break;
+}
+}
+if(flag==0)
+{
+system.out.println(n+"is prime number");
+}
+}//end of else
 }
 }
